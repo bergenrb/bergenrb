@@ -1,0 +1,13 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+"no":
+  title: "Bergen Ruby Gruppen - Ruby og Ruby on Rails møter, prosjektkvelder og community"
+  description: "Bergen Ruby er en sosial community av rubyister og entusiaster av open source programvare. Hovedsamlingen er den andre tirsdagen av hver måned. De samlingene inneberer en eller to 45-minutters presentasjoner, lightning talks og kunngjøringer."
+
+  call_to_action: "Følg %{link} for å få med deg alt om Ruby i Bergen"
+
+  pages:
+    home:
+      follow_twitter: "Følg %{link} på Twitter"
+      attend: "Bli med på møter og prosjektkvelder"

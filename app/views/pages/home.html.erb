@@ -4,9 +4,9 @@
   <article>
     <header><h2>join</h2></header>
     <ol class='join'>
-      <li>Follow <a href='http://twitter.com/BostonRB' target='_blank'>@BostonRB</a> on Twitter</li>
+      <li><%= raw t(:follow_twitter, :link => link_to("@bergenrb", "http://twitter.com/bergenrb")) %></li>
       <li>Join the <a href='https://groups.google.com/group/boston-rubygroup' target='_blank'>BostonRB Mailing List</a></li>
-      <li>Attend meetings and project nights</li>
+      <li><%= t('.attend') %></li>
     </ol>
   </article>
   <article>
@@ -28,7 +28,7 @@
     <header>
       <h2>what</h2>
     </header>
-    <p>Boston Ruby is a local community of Rubyists and enthusiasts of open source software. The main event is the second Tuesday of every month. Those events entail one or two 45-minute presentations, lightning talks, and announcements.</p>
+    <p><%= t(:description) %></p>
   </article>
 
   <article>
