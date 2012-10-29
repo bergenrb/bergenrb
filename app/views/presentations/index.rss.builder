@@ -1,8 +1,8 @@
 xml.instruct! :xml, :version => "1.0"
 xml.rss :version => "2.0" do
   xml.channel do
-    xml.title "BostonRB Presenstations RSS Feed"
-    xml.description "Presentations given at BostonRB"
+    xml.title "BergenRB Presenstations RSS Feed"
+    xml.description "Presentations given at BergenRB"
     xml.link presentations_url
 
     @presentations.order('presented_at desc').each do |presentation|
