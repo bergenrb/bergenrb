@@ -1,9 +1,12 @@
 class Presentation < ActiveRecord::Base
   has_friendly_id :title, :use_slug => true
+
   validates :title, :description, :presented_at, :presenter_names, :presence => true
-  validates :slides_url, :video_url, :format => { :with => /^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$/i, :allow_blank => true, :message => 'invalid URL' }
+  validates :slides_url, :video_url, :meetup_url, :format => { :with => /^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$/i, :allow_blank => true, :message => 'invalid URL' }
+
   has_many :presentation_presenters
   has_many :presenters, :through => :presentation_presenters
+
   before_validation :set_description
 
   def self.find_all_by_cached_slug_or_id(id)
