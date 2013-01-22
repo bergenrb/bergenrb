@@ -5,7 +5,6 @@ BostonRuby::Application.routes.draw do
 
   root :to => 'high_voltage/pages#show', :id => 'home'
   get '/calendar' => 'high_voltage/pages#show', :id => 'calendar', :as => 'calendar'
-  resources :proposals, :only => [:new, :create]
   get '/presentations/month/:month/' => 'presentations#index', :as => 'month_presentations'
   get '/presentations/upcoming' => 'presentations#index', :as => 'upcoming_presentations', :defaults => { :upcoming => true }
   resources :presentations, :only => [:index, :show]
