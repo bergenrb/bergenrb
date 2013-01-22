@@ -2,7 +2,7 @@ source :rubygems
 
 ruby '1.9.3'
 
-gem 'thin'
+gem 'thin',                    '~> 1.5'
 
 gem 'rails',                   '~> 3.2.8'
 gem 'jquery-rails',            '~> 2.1'
@@ -46,6 +46,7 @@ group :test do
   gem 'launchy'
   gem 'simple-rss',         '~> 1.2.3'
   gem 'fivemat'
+  gem 'guard',              '~> 1.6'
   gem 'guard-rspec'
   gem 'rb-fsevent'
 end
