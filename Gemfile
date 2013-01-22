@@ -48,4 +48,6 @@ group :test do
   gem 'launchy'
   gem 'simple-rss',         '~> 1.2.3'
   gem 'fivemat'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
 end
