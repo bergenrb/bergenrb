@@ -15,7 +15,7 @@ feature 'BostonRB Presentations', %{
 
   scenario 'Viewing past presentations' do
     @upcoming_presentation = create(:upcoming_presentation)
-    click_link 'Presentations'
+    click_link 'Presentasjoner'
     have_presentation_content(@presentation_1, :should)
     have_presentation_content(@presentation_2, :should)
     have_presentation_content(@presentation_3, :should)
@@ -23,13 +23,13 @@ feature 'BostonRB Presentations', %{
   end
 
   scenario 'Viewing past presentation' do
-    click_link 'Presentations'
+    click_link 'Presentasjoner'
     click_link @presentation_1.title
     have_presentation_content(@presentation_1, :should)
   end
 
   scenario 'Subscribing to RSS' do
-    click_link 'Presentations'
+    click_link 'Presentasjoner'
     click_link 'RSS'
     feed = parse_feed
     have_rss_item(feed, @presentation_1)
@@ -38,7 +38,7 @@ feature 'BostonRB Presentations', %{
   end
 
   scenario 'Viewing Presentation for a given month' do
-    click_link 'Presentations'
+    click_link 'Presentasjoner'
     click_link 'May 10, 2011'
     have_presentation_content(@presentation_1, :should)
     have_presentation_content(@presentation_2, :should)
@@ -52,7 +52,7 @@ feature 'BostonRB Presentations', %{
     page.should_not have_content('Past presentations')
   end
 
-  scenario 'Viewing Upcoming Presentations' do
+  scenario 'Viewing Upcoming Presentasjoner' do
     @presentation_4 = create(:presentation, :presented_at => 2.weeks.from_now)
     visit '/presentations/upcoming'
     current_path.should eq "/presentations/month/#{@presentation_4.presented_at.strftime('%B-%Y')}"

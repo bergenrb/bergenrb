@@ -9,7 +9,7 @@ feature 'BostonRB Presenters' do
   end
 
   scenario 'Viewing presentations by presenter' do
-    click_link 'Presentations'
+    click_link 'Presentasjoner'
     within '#2011-05-10' do
       click_link @presenter_1.name
     end
