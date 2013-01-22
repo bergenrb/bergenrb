@@ -23,7 +23,6 @@ gem 'compass-rails'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails',    '~> 2.0'
-  gem 'memcache-client'
   gem 'debugger'
 end
 
@@ -33,9 +32,9 @@ group :assets do
   gem 'uglifier'
 end
 
-group :production, :staging do
-  gem 'pg',          '~> 0'
-  gem 'redis-store', '~> 1.0.0.1'
+group :production do
+  gem 'pg'
+  gem 'dalli'
 end
 
 group :test do
