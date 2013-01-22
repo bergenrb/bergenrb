@@ -28,7 +28,6 @@ end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.0'
-  gem 'coffee-rails', '~> 3.2.0'
   gem 'uglifier'
 end
 
