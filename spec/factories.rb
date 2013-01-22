@@ -20,10 +20,4 @@ FactoryGirl.define do
     sequence(:name) { |n| "Test Presenter #{n}" }
     url            'http://twitter.com/some_presenter'
   end
-
-  factory :blog do
-    author           'Brian Cardarella'
-    twitter_username { |blog| "@#{blog.author.gsub(' ', '_')}" }
-    feed_url         'http://a.blog.com/feed'
-  end
 end

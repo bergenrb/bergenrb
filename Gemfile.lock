@@ -1,13 +1,3 @@
-GIT
-  remote: git://github.com/pauldix/feedzirra.git
-  revision: 71721ddaeba18383ae283600b6a2eb8a717d7b58
-  specs:
-    feedzirra (0.2.0.rc2)
-      curb (~> 0.8.0)
-      loofah (~> 1.2.1)
-      nokogiri (~> 1.5.3)
-      sax-machine (~> 0.2.0.rc1)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -66,7 +56,6 @@ GEM
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
     crack (0.3.2)
-    curb (0.8.3)
     daemons (1.1.9)
     dalli (2.6.0)
     database_cleaner (0.6.7)
@@ -87,8 +76,6 @@ GEM
     factory_girl_rails (4.1.0)
       factory_girl (~> 4.1.0)
       railties (>= 3.0.0)
-    faraday (0.8.4)
-      multipart-post (~> 1.1)
     ffi (1.3.1)
     fivemat (1.1.0)
     friendly_id (3.3.0.1)
@@ -115,8 +102,6 @@ GEM
     launchy (2.1.2)
       addressable (~> 2.3)
     listen (0.7.2)
-    loofah (1.2.1)
-      nokogiri (>= 1.4.4)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -126,7 +111,6 @@ GEM
     mocha (0.13.0)
       metaclass (~> 0.0.1)
     multi_json (1.5.0)
-    multipart-post (1.1.5)
     nokogiri (1.5.6)
     pg (0.14.1)
     polyglot (0.3.3)
@@ -177,8 +161,6 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    sax-machine (0.2.0.rc1)
-      nokogiri (~> 1.5.2)
     selenium-webdriver (2.29.0)
       childprocess (>= 0.2.5)
       multi_json (~> 1.0)
@@ -188,7 +170,6 @@ GEM
     simple_form (2.0.4)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
-    simple_oauth (0.2.0)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -206,10 +187,6 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    twitter (4.4.4)
-      faraday (~> 0.8, < 0.10)
-      multi_json (~> 1.0)
-      simple_oauth (~> 0.2)
     tzinfo (0.3.35)
     uglifier (1.3.0)
       execjs (>= 0.3.0)
@@ -237,7 +214,6 @@ DEPENDENCIES
   database_cleaner (~> 0.6.0)
   debugger
   factory_girl_rails (~> 4.0)
-  feedzirra!
   fivemat
   friendly_id (~> 3.3.0.1)
   guard-rspec
@@ -256,7 +232,6 @@ DEPENDENCIES
   stamp (~> 0.1.0)
   thin
   timecop (~> 0.3.5)
-  twitter
   uglifier
   valid_attribute (~> 1)
   vcr (~> 1.10.3)
