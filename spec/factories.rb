@@ -6,6 +6,7 @@ FactoryGirl.define do
     video_provider 'vimeo'
     sequence(:description)  { |n| "Test Description #{n}" }
     sequence(:slides_url) { |n| "http://slides.com/#{n}" }
+    sequence(:meetup_url) { |n| "http://meetup.com/#{n}" }
     presenter       { create(:presenter) }
   end
 

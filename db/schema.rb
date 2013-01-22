@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130122195512) do
+ActiveRecord::Schema.define(:version => 20130122202525) do
 
   create_table "presentation_presenters", :force => true do |t|
     t.integer  "presentation_id"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20130122195512) do
     t.string   "video_provider"
     t.string   "cached_slug"
     t.string   "video_offset"
+    t.string   "meetup_url"
   end
 
   create_table "presenters", :force => true do |t|

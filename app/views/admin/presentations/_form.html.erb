@@ -4,6 +4,7 @@
   <%= form.input :description, :as => :text %>
   <%= form.input :video_url, :label => 'Video URL' %>
   <%= form.input :slides_url, :label => 'Slides URL' %>
+  <%= form.input :meetup_url, :label => 'Meetup URL' %>
   <%= form.input :presented_at, :label => 'Presented At', :as => :string, :input_html => { :class => 'date-field' } %>
   <%= form.submit 'Save Presentation' %>
 <% end %>
