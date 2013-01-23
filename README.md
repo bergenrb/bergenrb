@@ -1,4 +1,4 @@
-# BergenRB [![travis-ci status](https://api.travis-ci.org/bergenrb/bergenrb.png)](https://travis-ci.org/bergenrb/bergenrb)
+# BergenRB [![travis-ci status](https://api.travis-ci.org/bergenrb/bergenrb.png)](https://travis-ci.org/bergenrb/bergenrb) [![codeclimate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/bergenrb/bergenrb)
 
 This is the source code for the Bergen Ruby Group's community website:
 
