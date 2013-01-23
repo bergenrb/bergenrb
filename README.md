@@ -1,8 +1,8 @@
-# BostonRB [![travis-ci status](https://secure.travis-ci.org/bostonrb/bostonrb.png)](http://travis-ci.org/bostonrb/bostonrb)
+# BergenRB [![travis-ci status](https://api.travis-ci.org/bergenrb/bergenrb.png)](https://travis-ci.org/bergenrb/bergenrb)
 
-This is the source code for the Boston Ruby Group's community website:
+This is the source code for the Bergen Ruby Group's community website:
 
-    http://bostonrb.org
+    http://bergenrb.no
 
 It's a Rails app running [Ruby 1.9](http://www.ruby-lang.org/en/downloads) and uses:
 
